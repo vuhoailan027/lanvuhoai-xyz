@@ -4,63 +4,131 @@
     <title>HR Recruitment Assistant</title>
     <meta charset="utf-8">
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1 { color: #4285f4; }
-        h2 { color: #34a853; margin-top: 30px; }
-        .feature { background: #f8f9fa; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            max-width: 900px; margin: 0 auto; padding: 40px 20px; 
+            line-height: 1.6; color: #333;
+        }
+        h1 { color: #1a73e8; font-size: 2.5em; margin-bottom: 10px; }
+        h2 { color: #1967d2; margin-top: 40px; border-bottom: 2px solid #e8f0fe; padding-bottom: 10px; }
+        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 10px; margin: 30px 0; text-align: center; }
+        .feature { background: #f8f9fa; padding: 20px; margin: 15px 0; border-radius: 8px; border-left: 4px solid #1a73e8; }
+        .feature h3 { margin-top: 0; color: #1967d2; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .tech-stack { background: #e8f0fe; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        .contact { background: #f1f3f4; padding: 30px; border-radius: 10px; margin-top: 40px; }
     </style>
 </head>
 <body>
     <h1>HR Recruitment Assistant</h1>
-    <p><strong>AI-powered recruitment tool for Google Sheets</strong></p>
     
-    <h2>Mục đích ứng dụng</h2>
-    <p>HR Recruitment Assistant là ứng dụng được thiết kế để tự động hóa và tối ưu hóa quy trình tuyển dụng cho các doanh nghiệp. Ứng dụng giúp các chuyên viên HR quản lý ứng viên hiệu quả thông qua tích hợp với Google Sheets.</p>
-    
-    <h2>Tính năng chính</h2>
-    <div class="feature">
-        <h3>🤖 Phân tích CV tự động</h3>
-        <p>Sử dụng AI để đọc, phân tích và trích xuất thông tin quan trọng từ CV ứng viên</p>
+    <div class="hero">
+        <h2 style="margin-top: 0; border: none; color: white;">Intelligent Recruitment Automation for Google Workspace</h2>
+        <p style="font-size: 1.2em;">Streamline your hiring process with AI-powered candidate management and automated workflows</p>
     </div>
     
-    <div class="feature">
-        <h3>📊 Quản lý ứng viên</h3>
-        <p>Theo dõi trạng thái, tiến độ và đánh giá của từng ứng viên trong quy trình tuyển dụng</p>
+    <h2>What is HR Recruitment Assistant?</h2>
+    <p>HR Recruitment Assistant is a comprehensive Google Apps Script application that transforms how organizations manage their recruitment process. Built specifically for Google Workspace users, it integrates seamlessly with Google Sheets, Gmail, and Google Drive to create an intelligent recruitment management system.</p>
+    
+    <p>This application addresses the common challenges faced by HR professionals: manual candidate tracking, time-consuming CV screening, inconsistent communication, and lack of recruitment analytics. By automating these processes, organizations can focus on what matters most - finding the right talent.</p>
+    
+    <h2>Core Features & Capabilities</h2>
+    
+    <div class="grid">
+        <div class="feature">
+            <h3>🤖 AI-Powered CV Analysis</h3>
+            <p>Automatically extract and categorize candidate information from uploaded resumes. The system uses advanced text processing to identify skills, experience, education, and contact details, saving hours of manual data entry.</p>
+        </div>
+        
+        <div class="feature">
+            <h3>📊 Comprehensive Candidate Tracking</h3>
+            <p>Monitor every candidate through the recruitment pipeline with customizable stages, automated status updates, and detailed candidate profiles stored securely in Google Sheets.</p>
+        </div>
+        
+        <div class="feature">
+            <h3>📧 Automated Communication</h3>
+            <p>Send personalized emails to candidates at each stage of the recruitment process. Templates can be customized for different positions and include automatic scheduling for follow-ups.</p>
+        </div>
+        
+        <div class="feature">
+            <h3>📈 Advanced Reporting & Analytics</h3>
+            <p>Generate detailed weekly and monthly recruitment reports including conversion rates, time-to-hire metrics, source effectiveness, and team performance analytics.</p>
+        </div>
+        
+        <div class="feature">
+            <h3>🔄 Workflow Automation</h3>
+            <p>Create custom recruitment workflows with automated triggers, approvals, and notifications. Streamline interview scheduling and feedback collection processes.</p>
+        </div>
+        
+        <div class="feature">
+            <h3>🔍 Smart Candidate Matching</h3>
+            <p>Match candidates to job requirements using intelligent scoring algorithms that consider skills, experience, and cultural fit indicators.</p>
+        </div>
     </div>
     
-    <div class="feature">
-        <h3>📧 Gửi email tự động</h3>
-        <p>Tự động gửi email thông báo đến ứng viên về các bước trong quy trình tuyển dụng</p>
+    <h2>Who Can Benefit?</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Enterprise HR Teams</h3>
+            <p>Large organizations managing high-volume recruitment with multiple stakeholders and complex approval processes.</p>
+        </div>
+        <div class="card">
+            <h3>SME Human Resources</h3>
+            <p>Small to medium enterprises looking to professionalize their recruitment process without expensive ATS systems.</p>
+        </div>
+        <div class="card">
+            <h3>Recruitment Agencies</h3>
+            <p>Staffing firms managing multiple clients and positions simultaneously, requiring efficient candidate database management.</p>
+        </div>
+        <div class="card">
+            <h3>Startup Teams</h3>
+            <p>Growing companies needing scalable recruitment infrastructure that integrates with existing Google Workspace tools.</p>
+        </div>
     </div>
     
-    <div class="feature">
-        <h3>📈 Báo cáo tuyển dụng</h3>
-        <p>Tạo báo cáo hàng tuần về tình hình tuyển dụng và hiệu quả của từng kênh tuyển dụng</p>
+    <div class="tech-stack">
+        <h2>Technical Implementation</h2>
+        <p><strong>Platform:</strong> Google Apps Script with Google Workspace integration</p>
+        <p><strong>Data Storage:</strong> Google Sheets with structured data management</p>
+        <p><strong>Communication:</strong> Gmail API for automated email workflows</p>
+        <p><strong>File Management:</strong> Google Drive integration for CV storage and processing</p>
+        <p><strong>Security:</strong> OAuth 2.0 authentication with enterprise-grade security standards</p>
     </div>
     
-    <h2>Đối tượng sử dụng</h2>
+    <h2>Why Choose HR Recruitment Assistant?</h2>
     <ul>
-        <li>Chuyên viên HR và tuyển dụng</li>
-        <li>Quản lý nhân sự</li>
-        <li>Công ty vừa và nhỏ cần tối ưu quy trình tuyển dụng</li>
-        <li>Startup cần công cụ tuyển dụng hiệu quả</li>
+        <li><strong>Seamless Integration:</strong> Works natively within Google Workspace - no additional software required</li>
+        <li><strong>Customizable Workflows:</strong> Adapt the system to match your organization's unique recruitment process</li>
+        <li><strong>Data Security:</strong> All data remains within your Google Workspace environment</li>
+        <li><strong>Scalable Solution:</strong> Grows with your organization from startup to enterprise</li>
+        <li><strong>No Infrastructure Costs:</strong> Leverages existing Google Workspace subscription</li>
+        <li><strong>Real-time Collaboration:</strong> Multiple team members can work simultaneously with live updates</li>
     </ul>
     
-    <h2>Lợi ích</h2>
-    <ul>
-        <li><strong>Tiết kiệm thời gian:</strong> Giảm 70% thời gian xử lý hồ sơ ứng viên</li>
-        <li><strong>Tăng độ chính xác:</strong> AI giúp phân loại và đánh giá ứng viên khách quan</li>
-        <li><strong>Dễ sử dụng:</strong> Tích hợp trực tiếp với Google Sheets quen thuộc</li>
-        <li><strong>Miễn phí:</strong> Sử dụng hoàn toàn miễn phí cho doanh nghiệp</li>
-    </ul>
+    <div class="contact">
+        <h2>Get Started & Support</h2>
+        <p>Ready to transform your recruitment process? Our team provides comprehensive setup, training, and ongoing support to ensure successful implementation.</p>
+        
+        <p><strong>Contact Information:</strong><br>
+        Email: <a href="mailto:vuhoallan027@gmail.com">vuhoallan027@gmail.com</a><br>
+        Support Hours: Monday - Friday, 9:00 AM - 6:00 PM (GMT+7)</p>
+        
+        <p><strong>Implementation includes:</strong></p>
+        <ul>
+            <li>Custom workflow configuration</li>
+            <li>Team training and onboarding</li>
+            <li>Data migration assistance</li>
+            <li>30-day post-implementation support</li>
+        </ul>
+    </div>
     
-    <h2>Liên hệ hỗ trợ</h2>
-    <p>Email: <a href="mailto:vuhoallan027@gmail.com">vuhoallan027@gmail.com</a></p>
+    <hr style="margin: 40px 0; border: none; border-top: 1px solid #e0e0e0;">
     
-    <ul>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms of Service</a></li>
-        <li><a href="support.html">Support</a></li>
+    <ul style="text-align: center; list-style: none; padding: 0;">
+        <li style="display: inline-margin: 0 20px;"><a href="privacy.html">Privacy Policy</a></li>
+        <li style="display: inline; margin: 0 20px;"><a href="terms.html">Terms of Service</a></li>
+        <li style="display: inline; margin: 0 20px;"><a href="support.html">Technical Support</a></li>
     </ul>
 </body>
 </html>
